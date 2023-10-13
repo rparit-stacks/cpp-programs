@@ -5,24 +5,30 @@ int main()
 {
     int m,n;
 
-    cout<<"Enter  a number ";
+    cout<<"Enter a number ";
     cin>>m;
     n=m;
     
     for(int i = 1 ; i <= m ; i++)
     {
         
-        // for(int j = 1 ; j <= n-1 ; j++)
-        // {
-        //     cout<<" "<<" ";
-        // }
-
-        for(int j = 1 ; j <= i ; j++)
+        for(int j = 1 ; j <= n-1 ; j++)
+        {
+            cout<<" "<<" ";
+        }
+        
+         for(int k = 1 ; k <= i-1 ; k++)
         {
             cout<<"*"<<" ";
         }
-        cout<<endl;
+        
+
+         for(int l = 1 ; l <= i ; l++)
+        {
+            cout<<"*"<<" ";
+        }
         n--;
+        cout<<endl;
     }
        
     return 0;
